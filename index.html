@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="arcade">
+    <h1 class="arcade__title">MEMORY ARCADE</h1>
+
+    <div class="arcade__stats">
+      <div class="stat">
+        <span class="stat__label">Jogadas</span>
+        <span class="stat__value" id="moves">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">Tempo</span>
+        <span class="stat__value" id="timer">00:00</span>
+      </div>
+      <button id="restart" class="arcade__restart">Reiniciar</button>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div class="win-message hidden" id="win-message">
+      <p>Você venceu! 🎉</p>
+      <p class="win-message__stats"></p>
+      <button id="play-again">Jogar de novo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
